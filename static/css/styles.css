@@ -171,8 +171,9 @@ padding: 10px;
 
 
 .predictor-inner {
-    display:block;
-    width: 1000px;
+    display: block;
+    width: 90%;  
+    max-width: 1000px;  
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -180,20 +181,23 @@ padding: 10px;
     border: 5px solid #752300;
     border-radius: 50px;
     background-color: rgb(255, 181, 90);
-    padding: 10px;
-    margin: 30px;
+    padding: 20px;  
+    margin: 30px auto;  /* Center the box horizontally */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.predictor-inner input{
+
+.predictor-inner input {
     display: inline;
-    width: 700px;
+    width: 90%;  
+    max-width: 600px;  
     align-self: center;
     border-radius: 30px;
     border: 5px solid #752300;
-    padding: 10px;
-    padding-left: 30px;
+    padding: 12px 30px;  
+    box-sizing: border-box;  
 }
+
 
 .predictor-inner input:focus, textarea:focus, select:focus {
     outline: none;
@@ -249,11 +253,10 @@ padding: 10px;
     color: #333333;
 }
 
-/* Fix container positioning to relative for absolute positioning to work */
 .container1 {
     position: relative;
-    min-height: 600px;  /* Ensures enough space for questions and result */
-    padding-bottom: 120px;  /* Space for prediction box */
+    min-height: 600px;  
+    padding-bottom: 120px;  
 }
 
 
@@ -387,13 +390,13 @@ padding: 10px;
 .pfp {
     width: 400px;
     height: 400px;
-    object-fit: cover;
+    object-fit:cover;
     border: 5px solid #752300;
     border-radius: 200px;
     margin-bottom: 10px;
     align-self: center;
     
-    transition: transform 0.3s ease; /* Optional: Add a hover effect for the image */
+    transition: transform 0.3s ease; 
 }
 
 .teamProfile .pfp:hover {
@@ -432,6 +435,19 @@ padding: 10px;
     box-shadow: 5px 5px #752300;
 }
 
+@media (max-width: 768px) {
+    .predictor-inner input {
+        width: 95%;
+        max-width: none;  
+        font-size: 16px;
+    }
 
-  
-  
+    .question {
+        font-size: 20px;
+    }
+
+    .question button {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+}
