@@ -1,3 +1,14 @@
+
+<!--
+==========================================
+Project PinkPath (Breast Cancer Prediction)
+Author: Abdullatif Elmuaqqat
+Author: Maiwand Raheem
+Purpose: The model predicts whether a patient is suffering from malignant or benign breast cancer/
+         by asking user-friendly questions to non-expert users affected by the disease.
+==========================================
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,7 +158,6 @@
                    
                     <div class = "center-text">
                     <div class="button-group">
-                        <button type="button" onclick="previousQuestion(11)">Previous</button>
                         <button id="submit-btn" type="submit">Predict</button>
                     </div>
                     </div>
@@ -158,13 +168,13 @@
         
              </form>
 
-            <!-- Prediction Result Section -->
-<div id="prediction-result" class="prediction-box" style="display:none;">
-    <h3>Prediction Result:</h3>
-    <p id="prediction-text"></p>
-    <div class="buttons">
-        <button type="button" onclick="retakeTest()">Retake Form</button>
-    </div>
+                <!-- Prediction Result Section -->
+    <div id="prediction-result" class="prediction-box" style="display:none;">
+        <h3>Prediction Result:</h3>
+        <p id="prediction-text"></p>
+        <div class="buttons">
+            <button type="button" onclick="retakeTest()">Retake Form</button>
+        </div>
 
             </div>
             
@@ -180,7 +190,7 @@
                 <img class="pfp" src="static/WhatsApp Image 2025-01-03 at 01.52.41_4c9b32a6.jpg" alt="">
                 <h3>Abdullatif Elmuaqqat</h3>
                 <p>
-                    "I have always wanted to contribute to helping people affected by cancer. I was inspired by my mom’s strength as she fought cancer until her last breath. I chose to focus on breast cancer because it is the most common type, and I hope this project helps others by promoting early understanding of their condition.                    "                </p>
+                    "I have always wanted to contribute to helping people affected by cancer. I was inspired by my mom’s strength as she fought cancer until her last breath. I chose to focus on breast cancer because it is the most common type, and I hope this project helps others by promoting early understanding of their condition"                </p>
     
                 <div class="links">
                     <a href="https://www.linkedin.com/in/abdullatif-elmuaqqat/" target="_blank">
@@ -217,7 +227,6 @@
     
 
     <script>
-        // Form Navigation
         function validateAndNext(current) {
             const input = document.querySelector(`#btn-${current} input`);
             const value = parseFloat(input.value);
