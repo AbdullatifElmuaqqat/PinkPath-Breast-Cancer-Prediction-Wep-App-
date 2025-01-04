@@ -1,3 +1,13 @@
+"""
+==========================================
+Project PinkPath (Breast Cancer Prediction)
+Author: Abdullatif Elmuaqqat
+Author: Maiwand Raheem
+Purpose: The model predicts whether a patient is suffering from malignant or benign breast cancer/
+         by asking user-friendly questions to non-expert users affected by the disease.
+==========================================
+"""
+
 import numpy as np
 from flask import Flask, render_template, request, send_from_directory
 import pickle as pk
@@ -6,7 +16,7 @@ import pickle as pk
 app = Flask(__name__)
 
 # Load the trained model
-model = pk.load(open('model.joblib', 'rb'))
+model = pk.load(open('model/model.joblib', 'rb'))
 
 
 # 
@@ -107,4 +117,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
