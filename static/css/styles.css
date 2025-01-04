@@ -309,7 +309,7 @@ padding: 10px;
   /* TEAMS */
   .teamAll {
     background-color: #ffffff;
-    font-family: 'Avenir';
+    font-family: 'Avenir', sans-serif;
     padding: 15px;
     border: 5px solid #752300;
    border-radius: 50px;
@@ -318,12 +318,15 @@ padding: 10px;
 }
 
 .teamAll:hover{
+    font-family: 'Avenir', sans-serif;
     transform: scale(1.01);
     box-shadow: 10px 10px  #752300;
+    
 }
 
 
 #teamtitle{
+    font-family: 'Avenir', sans-serif;
    flex-grow: 0px;
    flex-shrink: 0px;
     text-align: center;
@@ -339,24 +342,26 @@ padding: 10px;
 }
 
 #teamtitle:hover{
+    font-family: 'Avenir', sans-serif;
+
     transform: scale(1.01);
     box-shadow: 7px 10px  #bf3900;
 }
    
 
 .team {
+    font-family: 'Avenir', sans-serif;
     display: flex;
    justify-content: center;
     flex-wrap: wrap;
     background-color: #ffffff;
     padding: 15px;
-    font-family: 'Avenir';
 }
 
 .teamProfile h3{
     align-self: center;
     font-size: 35px;
-    font-family: 'Avenir';
+    font-family: 'Avenir', sans-serif;
     /* text-shadow: 2px 2px rgb(113, 23, 0); */
     color: rgb(75, 24, 0);
 }
@@ -368,7 +373,6 @@ padding: 10px;
     border-radius: 50px;
     width: 450px;
     padding: 15px;
-    
     margin: 30px;
     border: 7px solid #752300;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
@@ -402,7 +406,7 @@ padding: 10px;
     padding: 20px;
     border: 4px solid #752300;
     border-radius: 30px;
-    font-family: 'Avenir';
+    font-family: 'Avenir', sans-serif;
     word-spacing: 2px;
     font-weight: bold;
     line-height: 25px;
@@ -419,7 +423,6 @@ padding: 10px;
 .linkedIn {
      width: 62px;
      height: 62px;
-     /* border: 5px solid #37210f; */
      border-radius: 20px;
      
 }
