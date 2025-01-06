@@ -219,6 +219,21 @@ padding: 10px;
     display: none;
 }
 
+#prediction-result button{
+    border: 5px solid #752300;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #752300;
+    color: white;
+    font-weight: bold;
+}
+
+#prediction-result button:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px  #be3900;
+}
+
 .prediction-box {
     display: none;
     flex-direction: column;
